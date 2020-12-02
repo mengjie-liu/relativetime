@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE CLOCK</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery.keyframes.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="login">
+      <form id="liform" action="/" method="get" autocomplete="off">
+        <input id="username" type="text" name="name" />
+        <label for="name"> please&nbsp;enter&nbsp;your&nbsp;name</label><br />
+        <input id="submit" type="submit" value="submit" />
+      </form>
+    </div>
+    <div id="welcome">
+      <div id="back"></div>
+      <div id="front"></div>
+      <h1>
+        close&nbsp;your&nbsp;eyes&nbsp;and&nbsp;count&nbsp;to&nbsp;10<br />
+        <span>
+          (press&nbsp;the&nbsp;spacebar&nbsp;to&nbsp;start&nbsp;and&nbsp;press&nbsp;again&nbsp;to&nbsp;end)
+        </span>
+      </h1>
+      <h2 id="wel"></h2>
+    </div>
+    <div id="newclock">
+      <div class="clock">
+        <div class="second-hand"></div>
+        <div class="minute-hand"></div>
+        <div class="hour-hand"></div>
+        <div class="pin"></div>
+      </div>
+      <h1 id="redo">recreate your clock</h1>
+      <h1 id="galt">gallery</h1>
+    </div>
+  </body>
+</html>
